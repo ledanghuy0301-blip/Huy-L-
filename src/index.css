@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(17% 0.006 250);
+  --foreground: oklch(95% 0.01 220);
+  --card: oklch(21% 0.006 250);
+  --card-foreground: oklch(95% 0.01 220);
+  --popover: oklch(21% 0.006 250);
+  --popover-foreground: oklch(95% 0.01 220);
+  --primary: oklch(82% 0.15 175);
+  --primary-foreground: oklch(17% 0.006 250);
+  --secondary: oklch(26% 0.008 250);
+  --secondary-foreground: oklch(95% 0.01 220);
+  --muted: oklch(24% 0.008 250);
+  --muted-foreground: oklch(70% 0.03 230);
+  --accent: oklch(80% 0.14 75);
+  --accent-foreground: oklch(17% 0.006 250);
+  --destructive: oklch(68% 0.2 25);
+  --destructive-foreground: oklch(98% 0 0);
+  --success: oklch(78% 0.17 150);
+  --warning: oklch(82% 0.15 85);
+  --border: oklch(34% 0.01 250);
+  --input: oklch(34% 0.01 250);
+  --ring: oklch(82% 0.15 175);
+  --land: oklch(30% 0.04 230);
+  --ocean: oklch(19% 0.03 245);
+  --shadow-glow: 0 0 20px oklch(82% 0.15 175 / 0.18);
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-land: var(--land);
+  --color-ocean: var(--ocean);
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}

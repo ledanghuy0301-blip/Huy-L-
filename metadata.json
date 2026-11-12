@@ -1,0 +1,6 @@
+{
+  "name": "Kiểm chứng thật giả — Dự án KHKT",
+  "description": "Nghiên cứu, phát triển hệ thống trí tuệ nhân tạo đa phương thức hỗ trợ kiểm chứng tin tức sai lệch và nhận diện sớm cuộc gọi lừa đảo qua đồ thị tri thức và bản đồ nguồn tin — Dự án KHKT của Lê Đăng Huy.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
